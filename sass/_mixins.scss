@@ -1,0 +1,54 @@
+@mixin flex ($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin button {
+  border: 1px solid rgba(255, 255,255, 0.5) ;
+  padding: 1rem 2rem;
+  border-radius: 20px 20px 20px 20px;
+  color: $branco; 
+  font-weight: 800;
+}
+
+@mixin boxShadow{
+  box-shadow: 5px 4px 11px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 5px 4px 11px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 4px 11px 0px rgba(0,0,0,0.75);
+}
+
+@mixin btnSocial{
+  display: flex;
+  gap: 0.5rem;
+  padding: 3rem 2rem;
+  border-radius: 20px 20px 20px 20px;
+  color: #ffffff;
+  font-weight: 800;
+  background: rgba(33, 33, 33, 0.83);
+  color: #fff7f7;
+  border: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 27rem;
+  position: relative;
+  background-image: url(../assets/img/apple-store.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+  &:hover {
+      transform: scale(1.1);
+      transition: all 0.5s;
+  }
+}
+
+@mixin responsive($screen) {
+    @media (max-width: $screen) {
+      @content;   
+    }
+  }

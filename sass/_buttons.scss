@@ -1,0 +1,18 @@
+
+
+
+@mixin btn {
+    padding: 1rem 2rem;
+    border-radius: 20px 20px 20px 20px;
+    color: #ffffff;
+    font-weight: 800;
+    background: rgb(33 33 33 / 83%);
+    color: #fff7f7;
+    border: none;
+    &:hover {
+        background: $amarelo;
+        color: #fff7f7;
+        border: none;
+    }
+}
+

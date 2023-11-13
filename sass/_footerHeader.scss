@@ -1,0 +1,34 @@
+header{
+    display: flex;
+    background: url(../assets/img/bg-hero.svg);
+    ;
+    height: 9rem;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+
+
+header .container{
+    @include flex(row, space-between, center);
+    align-items: center
+}
+ul {
+    @include flex(row, space-between, center);
+    gap: 3rem;
+}
+
+header .container button{
+   @include button;
+    transition: 0.5s;
+}
+
+header .container button:hover{
+    background-color: $amarelo ;
+    color: $branco;
+    transition: 0.5s;
+    border: none;
+}
+header{
+    border-bottom: 0.5px solid $branco;
+}
